@@ -1,0 +1,52 @@
+{
+  "name": "oclif-debug",
+  "version": "0.0.0",
+  "author": "Jeff Dickey @jdxcode",
+  "bugs": "https://github.com/jdxcode/oclif-debug/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@oclif/plugin-help": "^2",
+    "@oclif/tslint": "^1",
+    "@types/chai": "^4",
+    "@types/mocha": "^5",
+    "@types/node": "^10",
+    "globby": "^8",
+    "ts-node": "^6",
+    "tslint": "^5",
+    "typescript": "^2.9"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/lib",
+    "/oclif.manifest.json",
+    "/yarn.lock"
+  ],
+  "homepage": "https://github.com/jdxcode/oclif-debug",
+  "keywords": [
+    "oclif-plugin"
+  ],
+  "license": "MIT",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "oclif-example",
+    "devPlugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "jdxcode/oclif-debug",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "posttest": "tsc -p . --noEmit && tslint -p . -t stylish",
+    "prepack": "rm -rf lib && tsc && oclif-dev manifest && oclif-dev readme",
+    "prepare": "rm -rf lib && tsc",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
