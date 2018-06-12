@@ -21,7 +21,7 @@ $ npm install -g oclif-debug
 $ oclif-example COMMAND
 running command...
 $ oclif-example (-v|--version|version)
-oclif-debug/0.0.1 darwin-x64 node-v10.3.0
+oclif-debug/0.0.2 darwin-x64 node-v10.4.0
 $ oclif-example --help [COMMAND]
 USAGE
   $ oclif-example COMMAND
@@ -30,25 +30,16 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`oclif-example hello [FILE]`](#oclif-example-hello-file)
+* [`oclif-example debug`](#oclif-example-debug)
 
-## `oclif-example hello [FILE]`
+## `oclif-example debug`
 
-describe the command here
+debug command
 
 ```
 USAGE
-  $ oclif-example hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ oclif-example hello
-  hello world from ./src/hello.ts!
+  $ oclif-example debug
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/jdxcode/oclif-debug/blob/v0.0.1/src/commands/hello.ts)_
+_See code: [src/commands/debug.ts](https://github.com/jdxcode/oclif-debug/blob/v0.0.2/src/commands/debug.ts)_
 <!-- commandsstop -->
