@@ -21,7 +21,7 @@ $ npm install -g oclif-debug
 $ oclif-example COMMAND
 running command...
 $ oclif-example (-v|--version|version)
-oclif-debug/0.0.2 darwin-x64 node-v10.4.0
+oclif-debug/0.0.3 darwin-x64 node-v10.5.0
 $ oclif-example --help [COMMAND]
 USAGE
   $ oclif-example COMMAND
@@ -41,5 +41,5 @@ USAGE
   $ oclif-example debug
 ```
 
-_See code: [src/commands/debug.ts](https://github.com/jdxcode/oclif-debug/blob/v0.0.2/src/commands/debug.ts)_
+_See code: [src/commands/debug.ts](https://github.com/jdxcode/oclif-debug/blob/v0.0.3/src/commands/debug.ts)_
 <!-- commandsstop -->
