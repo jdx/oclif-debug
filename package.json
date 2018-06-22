@@ -36,6 +36,9 @@
   "oclif": {
     "commands": "./lib/commands",
     "bin": "oclif-example",
+    "hooks": {
+      "postinstall": "./lib/hooks/postinstall"
+    },
     "devPlugins": [
       "@oclif/plugin-help"
     ]
